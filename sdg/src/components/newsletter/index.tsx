@@ -1,7 +1,8 @@
 import React from 'react';
+import './index.scss';
 
 const Newsletter = () => {
-  return <div>Newsletter</div>;
+  return <div className='container'>Newsletter</div>;
 };
 
 export default Newsletter;
