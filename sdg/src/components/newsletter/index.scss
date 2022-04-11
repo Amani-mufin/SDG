@@ -1,5 +1,81 @@
 @import '../../defaultStyles/Colors.scss';
+@import '../../defaultStyles/Typography.scss';
+@import '../../defaultStyles/MediaQueries.scss';
 
 .container {
   background-color: $wine;
+  padding: 0 3rem;
+  display: flex;
+  color: $white;
+  @include tablet {
+    flex-direction: column;
+  }
+
+  .left {
+    display: grid;
+    place-content: center;
+
+    .heading {
+      @include workSansTheme($lineHeight: 77px);
+      @include tablet {
+        @include workSansTheme($fontSize: 26px, $lineHeight: 26px);
+      }
+    }
+    .text {
+      @include workSansTheme($fontSize: 16px, $lineHeight: 30px);
+    }
+    .form {
+      background-color: $lightGrey;
+      padding: 0.5em;
+      margin-bottom: 5rem;
+      width: 100%;
+      border-radius: 7px;
+      @include workSansTheme(
+        $fontWeight: 600,
+        $fontSize: 14px,
+        $lineHeight: 26px
+      );
+
+      input {
+        background: transparent;
+        padding: 1em 3em;
+        outline: none;
+        border: none;
+        width: 60%;
+        @include phone {
+          width: 50%;
+          padding: 1em;
+        }
+      }
+      button {
+        background-color: $dark;
+        color: $white;
+        padding: 1em 3em;
+        border-radius: 7px;
+
+        @include tablet {
+          padding: 1em 1.5em;
+        }
+        @include phone {
+          padding: 1em;
+        }
+      }
+    }
+  }
+  .right {
+    display: flex;
+
+    @include tablet {
+      display: none;
+    }
+    .mobile1 {
+      margin-top: 14.2rem;
+      margin-right: -3rem;
+    }
+    .mobile2 {
+      position: relative;
+      margin-top: 5rem;
+      z-index: 2;
+    }
+  }
 }
