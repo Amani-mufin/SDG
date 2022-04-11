@@ -1,0 +1,33 @@
+@mixin workSansTheme(
+  $fontWeight: 700,
+  $fontSize: 48px,
+  $fontStyle: normal,
+  $lineHeight: 60px
+) {
+  font-family: Work Sans;
+  font-style: $fontStyle;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin card {
+  background: #f5f3f3;
+  box-shadow: 0px 0px 20px rgba(92, 38, 130, 0.25);
+  border-radius: 10px;
+  padding: 1em;
+  background-image: url(../../assets/images/pink-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  .title {
+    @include workSansTheme($fontSize: 24px, $lineHeight: 28px);
+    color: $dark;
+  }
+  .description {
+    @include workSansTheme($fontSize: 16px, $lineHeight: 26px);
+    color: $grey;
+  }
+  .blue {
+  }
+}

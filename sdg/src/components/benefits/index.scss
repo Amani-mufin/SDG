@@ -1,0 +1,61 @@
+@import '../../defaultStyles/Colors.scss';
+@import '../../defaultStyles/Typography.scss';
+@import '../../defaultStyles/MediaQueries.scss';
+
+.benefit_container {
+  padding: 1em 3em;
+  margin-bottom: 10em;
+  @include tablet {
+    margin-bottom: 5em;
+  }
+  .heading {
+    color: $red;
+    margin-bottom: 2em;
+  }
+  .subtitle {
+    @include workSansTheme();
+    @include tablet {
+      @include workSansTheme($fontSize: 26px, $lineHeight: 26px);
+    }
+  }
+  .cards_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3em;
+    }
+    @include phone {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+      background: $offWhite;
+      box-shadow: 0px 0px 20px rgba(92, 38, 130, 0.25);
+      border-radius: 10px;
+      padding: 1em;
+      background-image: url(../../assets/images/pink-bg.svg);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+
+      .title {
+        @include workSansTheme($fontSize: 24px, $lineHeight: 28px);
+        color: $dark;
+      }
+      .description {
+        @include workSansTheme($fontSize: 16px, $lineHeight: 26px);
+        color: $grey;
+      }
+      &:nth-child(2) {
+        background-image: url(../../assets/images/green-bg.svg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+      }
+      &:nth-child(3) {
+        background-image: url(../../assets/images/blue-bg.svg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+      }
+    }
+  }
+}
