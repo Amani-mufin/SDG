@@ -1,0 +1,70 @@
+@import "../../defaultStyles/Colors.scss";
+@import "../../defaultStyles/Typography.scss";
+@import "../../defaultStyles/MediaQueries.scss";
+
+.hero_container {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 10em;
+  // @include tablet {
+  //   margin-bottom: 5em;
+  // }
+  @include tablet {
+    margin-top: 1rem;
+    margin-bottom: 6em;
+  }
+  .heading {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 113px;
+    max-width: 700px;
+    margin: 0 auto;
+    background: radial-gradient(
+      circle at center,
+      #000000 9.11%,
+      #2d80f9 34.9%,
+      #3a163f 60.09%,
+      #e64336 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    @include tablet {
+      font-size: 40px;
+      max-width: 300px;
+    }
+  }
+  .subtitle {
+    // @include workSansTheme($fontSize: 16px,$lineHeight: 30px);
+    margin-top: 1em;
+    @include tablet {
+      margin-top: 0;
+      // @include workSansTheme($fontSize: 13px, $lineHeight: 26px);
+    }
+  }
+  .btn-container {
+    button{
+      font-size: 16px;
+      width: 192px;
+      height: 59px;
+      left: 730px;
+      top: 537px;
+      text-align: left;
+      border: 2px solid #3a163f;
+      padding: 1em;
+
+      border-radius: 5px;
+      background: linear-gradient(to right, white, white),
+        linear-gradient(to right, red, blue);
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      border: 2px solid transparent;
+      .title{
+        font-weight: 800;
+      }
+    }
+  }
+}
