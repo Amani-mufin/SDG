@@ -3,7 +3,8 @@ import "./index.scss";
 
 import AppleStore from "../../assets/images/apple-store-icon.png";
 import Playstore from "../../assets/images/playstore-icon.svg";
-const Benefits = () => {
+
+const Hero = () => {
   return (
     <div className="hero_container container">
       <p className="heading">Coming Soon</p>
@@ -36,4 +37,4 @@ const Benefits = () => {
   );
 };
 
-export default Benefits;
+export default Hero;

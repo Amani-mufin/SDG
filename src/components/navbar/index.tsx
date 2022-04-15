@@ -3,7 +3,7 @@ import './index.scss';
 
 import Logo from '../../assets/images/logo.svg';
 
-const Benefits = () => {
+const Navbar = () => {
   return (
     <div className='navbar container'>
       <div className="logo">
@@ -13,4 +13,4 @@ const Benefits = () => {
   );
 };
 
-export default Benefits;
+export default Navbar;
