@@ -1,11 +1,12 @@
-import React from 'react';
 import './index.scss';
 import Mobile1 from '../../assets/images/mobile1.svg';
 import Mobile2 from '../../assets/images/mobile2.svg';
 
 const Newsletter = () => {
   return (
-    <div className='container'>
+    <div className='container-newletter'>
+      <div className="container">
+
       <div className='left'>
         <p className='heading'>Join the community</p>
         <p className='text'>
@@ -26,7 +27,8 @@ const Newsletter = () => {
           {' '}
           <img src={Mobile1} alt='mobile' />
         </div>
-        <img src={Mobile2} alt='mobile' className='mobile2' />
+        <img src={Mobile2} alt='mobile' className='mobile2 m-3 mb-0 mt-5'  />
+      </div>
       </div>
     </div>
   );

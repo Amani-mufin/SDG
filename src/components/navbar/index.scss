@@ -1,0 +1,17 @@
+@import '../../defaultStyles/Colors.scss';
+@import '../../defaultStyles/Typography.scss';
+@import '../../defaultStyles/MediaQueries.scss';
+
+.navbar{
+  margin-top: 2rem;
+  .logo{
+    width: 150px;
+    img{
+      width: 100%;
+      object-fit: contain;
+    }
+    @include tablet{
+      width: 100px;
+    }
+  }
+}

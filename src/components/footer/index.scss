@@ -1,0 +1,11 @@
+@import '../../defaultStyles/Colors.scss';
+@import '../../defaultStyles/Typography.scss';
+@import '../../defaultStyles/MediaQueries.scss';
+
+.footer{
+  margin-top: 13rem;
+  margin-bottom: 2em;
+  @include tablet{
+    margin-top: 5rem;
+  }
+}
