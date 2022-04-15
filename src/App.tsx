@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import Benefits from "./components/benefits";
 import Newsletter from "./components/newsletter";
 import Navber from "./components/navbar";

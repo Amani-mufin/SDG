@@ -1,9 +1,9 @@
 import React from 'react';
 import './index.scss';
-
 import Blue from '../../assets/images/blue.svg';
 import Green from '../../assets/images/green.svg';
 import Pink from '../../assets/images/pink.svg';
+
 const Benefits = () => {
   return (
     <div className='benefit_container container'>

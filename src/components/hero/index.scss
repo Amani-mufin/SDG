@@ -6,9 +6,6 @@
   text-align: center;
   margin-top: 6rem;
   margin-bottom: 10em;
-  // @include tablet {
-  //   margin-bottom: 5em;
-  // }
   @include tablet {
     margin-top: 1rem;
     margin-bottom: 6em;
@@ -38,15 +35,13 @@
     }
   }
   .subtitle {
-    // @include workSansTheme($fontSize: 16px,$lineHeight: 30px);
     margin-top: 1em;
     @include tablet {
       margin-top: 0;
-      // @include workSansTheme($fontSize: 13px, $lineHeight: 26px);
     }
   }
   .btn-container {
-    button{
+    button {
       font-size: 16px;
       width: 192px;
       height: 59px;
@@ -62,7 +57,7 @@
       background-clip: padding-box, border-box;
       background-origin: padding-box, border-box;
       border: 2px solid transparent;
-      .title{
+      .title {
         font-weight: 800;
       }
     }

@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.scss';
 import Mobile1 from '../../assets/images/mobile1.svg';
 import Mobile2 from '../../assets/images/mobile2.svg';
