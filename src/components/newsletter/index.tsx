@@ -10,17 +10,19 @@ const Newsletter = () => {
       <div className='left'>
         <p className='heading'>Join the community</p>
         <p className='text'>
-          Stay upto date with all the happening around SDG community and also
-          get notified when the App is launched{' '}
+          Stay upto date with all the happening around SDG community.
         </p>
-        <form className='form'>
+        {/* <form className='form'>
           <input
             type='email'
             name='email'
             placeholder='Please enter your email address'
           />
           <button type='submit'>Notify Me</button>
-        </form>
+        </form> */}
+        <a href='https://gdg.community.dev/gdg-ajah/' className='mt-5 mb-2' target="_blank" rel="noreferrer">
+          <button type='submit'>Join now</button>
+          </a>
       </div>
       <div className='right'>
         <div className='mobile1'>
